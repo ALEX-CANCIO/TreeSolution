@@ -20,10 +20,10 @@ class LoginController{
                 //Comprobamos el password del usuario correspondiante al Email, con la contraseña ingresada en form:
                 if($usuario->comprobarPassword($usuariotmp->contrasena)){
                     session_start();
-                    $_SESSION['id'] = $usuario->ID_Usuario;
-                    $_SESSION['nombre'] = $usuario->nombre . " " . $usuario->apellido;
-                    $_SESSION['email'] = $usuario->email;
-                    $_SESSION['login'] = true;
+                    //$_SESSION['id'] = $usuario->ID_Usuario;
+                    //$_SESSION['nombre'] = $usuario->nombre . " " . $usuario->apellido;
+                   //$_SESSION['email'] = $usuario->email;
+                    //$_SESSION['login'] = true;
 
                     //redireccionar
                     if($usuario->usuario == "admin"){
